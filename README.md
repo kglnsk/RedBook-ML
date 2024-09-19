@@ -12,5 +12,11 @@ pip install -r requirements.txt
 
 ```
 uvicorn app:app --host 0.0.0.0 --port 8000
+curl -X POST "http://localhost:8000/classify" -F "file=@path_to_your_image.jpg"
+
 ```
 ## Docker
+```
+docker build -t clip-image-classifier-api .
+docker run -d -p 8000:8000 clip-image-classifier-api
+```
