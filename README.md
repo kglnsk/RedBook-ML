@@ -20,3 +20,5 @@ curl -X POST "http://localhost:8000/classify" -F "file=@path_to_your_image.jpg"
 docker build -t clip-image-classifier-api .
 docker run -d -p 8000:8000 clip-image-classifier-api
 ```
+Demo 
+https://worthy-tick-noticeably.ngrok-free.app/
