@@ -103,7 +103,7 @@ with tabs[1]:
         for result in st.session_state.classification_history:
             pred_class = result.get("predicted_class")
             if pred_class in distribution:
-                distribution['Горностай'] += 1
+                distribution[pred_class] += 1
         
         # Display as bar chart
         print(distribution)
